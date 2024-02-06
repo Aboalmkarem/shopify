@@ -11,69 +11,56 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-
     <header>
         <nav>
             <h1><span>Shop</span>ify</h1>
             <div class="toggle-btn">
                 <i class="fa-solid fa-bars"></i>
             </div>
-            <a href="/sign&login/sign&login.html"><button class="sign-btn">sign up</button></a>
-            <a href="/sign&login/sign&login.html"><button class="login-btn">login</button></a>
+            <a href="../login/login.html"><button class="sign-btn">sign up</button></a>
+            <a href="../login/login.html"><button class="login-btn">login</button></a>
             <ul>
                 <li><a href="../home.html">home</a></li>
-                <li><a href="#">offers</a></li>
+                <li><a href="../home.html#offers">offers</a></li>
                 <li><a href="#">about</a></li>
                 <li><a href="../cart/cart.html">
                     cart <span class="quantity">0</span>
                 </a></li>
             </ul>
-            
             <div class="dropdown-menu">
-                
-                <li><a class="active" href="home.html">home</a></li>
-                <li><a href="#">offers</a></li>
+                <li><a class="active" href="../home.html">home</a></li>
+                <li><a href="../home.html#offers">offers</a></li>
                 <li><a href="#">about</a></li>
-                <li><a href="cart.html">cart</a></li>
+                <li><a href="../cart/cart.html">cart</a></li>
                 <div class="btns">
                     <button class="sign-btn">sign up</button>
                     <button class="login-btn">login</button>
                 </div>
-                
             </div>
         </nav>
-
         <div class="sec">
-
             <div class="product">
-                
                 <div class="product-left">
                     <div class="product-img">
-                        <img src="/images/Athletic Shoe2.webp" alt="Athletic Shoe photo">
-                        
+                        <img src="../images/Athletic Shoe2.webp" alt="Athletic Shoe photo">
                     </div>
                 </div>
-                
                 <div class="product-right">
                     <div class="p-r-text">
-                        
                         <h2>Athletic Shoe</h2>
                         <p>Cheap Boys White Vulcanized Sneakers Comfortable Flat Shoes Men 2022 Autumn Spring Sneakers Men Running Shoes</p>
                         <button class="buyBtnC">Buy Now</button>
                         <button class="addProduct" onclick="addProduct(1)">Add to cart</button>
                     </div>
-                    
                 </div>
             </div>
-
         </div>
     </header>
-
     <div class="paymentContainer">
         <div class="payment">
             <button class="paymentClosing"><i class="fa-solid fa-xmark"></i></button>
             <div class="cardImg">
-                <img src="/images/credit card.png" alt="">
+                <img src="../images/credit card.png" alt="">
             </div>
             <form method="post">
                 <div class="input1">
@@ -125,15 +112,13 @@
             </form>
         </div>
     </div>
-
     <div class="successfully">
         <div>
-            <img src="/images/success.png" alt="">
+            <img src="../images/success.png" alt="">
             <h2>Product addition success</h2>
             <button id="successClosing">ok</button>
         </div>
     </div>
-
-    <script src="/product 1/product.js"></script>
+    <script src="../product 1/product.js"></script>
 </body>
 </html>
