@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify login</title>
+    <link rel="stylesheet" href="sign&login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <section>
+        <div class="flep">
+        <!-- login -->
+            <div class="form-box login">
+                <div class="form-value">
+                    <form name="form" id="form" method="get">
+                        <h2>login</h2>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="email" id="email" required autocomplete="none">
+                            <label for="">Email</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="password" id="password" required autocomplete="none">
+                            <label for="">Password</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="forget">
+                            <label for=""><input type="checkbox">Remember Me <span>|</span> <a href="#">Forget password</a></label>
+                        </div>
+                        <button id="loginBtn">Login</button>
+                        <div class="register">
+                            <p>Don't have an account? <span id="register">Register</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <!-- sign up -->
+            <div class="form-box sign-up">
+                <div class="form-value">
+                    <form name="form2" id="form2" method="post">
+                        <h2>sign up</h2>
+                        <div class="inputbox">
+                            <ion-icon name="person-circle-outline"></ion-icon>
+                            <input type="name" name="name" id="signName" required autocomplete="none">
+                            <label for="">Name</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="mail-outline"></ion-icon>
+                            <input type="email" name="email" id="signEmail" required autocomplete="none">
+                            <label for="">Email</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="password" id="signPassword" required autocomplete="none">
+                            <label for="">Password</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <div class="inputbox">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                            <input type="password" name="password" id="signConfirm" required autocomplete="none">
+                            <label for="">Confirm Password</label>
+                            <i class="fa-solid fa-circle-check" style="color: #822daa;"></i>
+                            <i class="fa-solid fa-circle-exclamation" style="color: #e74c3c;"></i>
+                            <small>error message</small>
+                        </div>
+                        <button id="signBtn">sign up</button>
+                        <div class="register">
+                            <p>Do you have an account? <span id="login">Login</span></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="sign&login.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

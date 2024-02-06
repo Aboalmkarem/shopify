@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopify</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1><span>Shop</span>ify</h1>
+            <div class="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <a href="/sign&login/sign&login.html"><button class="sign-btn">sign up</button></a>
+            <a href="/sign&login/sign&login.html"><button class="login-btn">login</button></a>
+            <ul>
+                <li><a class="active" href="home.html">home</a></li>
+                <li><a href="#offers">offers</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="cart/cart.html">
+                    cart <span class="quantity">0</span>
+                </a></li>
+            </ul>
+            <div class="dropdown-menu">
+                <li><a class="active" href="home.html">home</a></li>
+                <li><a href="#">offers</a></li>
+                <li><a href="#">about</a></li>
+                <li><a href="cart/cart.html">cart</a></li>
+                <div class="btns">
+                    <button class="sign-btn">sign up</button>
+                    <button class="login-btn">login</button>
+                </div>
+            </div>
+        </nav>
+        <div class="left">
+            <div class="left-back">
+                <h2>Welcome to <span>Shop</span>ify</h2>
+                <p>Shop and enjoy up to <span>50%</span> off</p>
+                <div class="search">
+                    <input type="text" placeholder="iphone 14 pro max " autocomplete="none">
+                    <button type="submit"><i class="fa-solid fa-search"></i> Search</button> 
+                </div>
+            </div> 
+        </div>
+    </header>
+    <!--========================== section 1 ==========================-->
+    <section>
+        <div class="services">
+            <div class="ser"><ion-icon name="shield-checkmark-outline"></ion-icon>Safe and reliable payment methods</div>
+            <div class="ser"><i class="fa-solid fa-hand-holding-dollar"></i>Money back guarantee</div>
+            <div class="ser"><i class="fa-solid fa-headset"></i> 24/7 customer service</div>
+        </div>
+        <div id="offers" class="offers">
+            <div class="offersHead">
+                <hr>
+                <h3> Offers </h3>
+                <hr>
+            </div>
+            <div class="offersCards">
+                <div class="offer1">
+                    <img src="/images/offer1e.webp" alt="">
+                    <h3>Click the button and get <span>70%</span> off</h3>
+                    <div class="crazyDiv">
+                        <button id="crazyBtn">Click</button>
+                    </div>
+                    <div class="successfully">
+                        <div>
+                            <img src="/images/success.png" alt="">
+                            <h2>Discount addition success</h2>
+                            <button id="successClosing">ok</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products">
+            <div class="productsHead">
+                <hr>
+                <h3> Recommended for you </h3>
+                <hr>
+            </div>
+            <div class="cards"></div>
+            <div class="productsFooter">
+                <h4>more and more coming soon ...</h4>
+            </div>
+        </div>
+        <footer>
+            <div class="About"></div>
+        </footer>
+    </section>
+    <script src="main.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
